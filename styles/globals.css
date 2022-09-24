@@ -2,8 +2,25 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Mitr', sans-serif;
+}
+:root{
+  /* Colores */
+  --black100: black;
+  --black90: hsl(0, 0%, 10%);
+  --black80: hsl(0, 0%, 20%);
+  --black70: hsl(0, 0%, 30%);
+  --black60: hsl(0, 0%, 40%);
+  --black50: hsl(0, 0%, 50%);
+  --black40: hsl(0, 0%, 60%);
+  --black30: hsl(0, 0%, 70%);
+  --black20: hsl(0, 0%, 80%);
+  --black10: hsl(0, 0%, 90%);
+  --black05: hsl(0, 0%, 95%);
+  --primary: hsl(17, 42%, 44%);
+  --primaryHover: hsl(17, 42%, 54%);
+  --secondary: hsl(191, 15%, 50%);
+  --terciary:hsl(201, 11%, 25%);
 }
 
 a {
@@ -15,12 +32,13 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+ @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    /* color: white; */
+     background: black;
+    /* background: url("../public/assets/hero_poster.png"); */
   }
-}
+} 

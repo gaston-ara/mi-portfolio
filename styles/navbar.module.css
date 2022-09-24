@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.items_container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo{
+    display: inline-block;
+    color: white;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.nav_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.nav_items a{
+    margin-left: 32px;
+    padding: 12px 0;
+    font-size: 18px;
+    font-family: 'Mitr', sans-serif;
+}
+.navlink{
+    text-decoration: underline;
+}
