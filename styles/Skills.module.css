@@ -1,31 +1,36 @@
-
-  .content{
+.title{
+    z-index: 1;
+}
+.content{
     z-index: 1;
     color: var(--black05);
     width: 90%;
-    max-width: 800px;
+    max-width: 700px;
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: var(--terciary);
     padding: 32px;
     border-radius: 16px;
-  }
- .image{
-    width: 30%;
+}
+.card{
+    width: fit-content;
+    height: fit-content;
+    margin: auto 24px;
     display: flex;
     justify-content: center;
     align-items: center;
- }
- .image img{
-    width: 160px;
-    height: 160px;
-    margin: auto;
-    border-radius: 50%;
- }
- .text{
-    width: 70%;
-    font-size: 18px;
+    flex-direction: column;
+
+}
+.card svg{
+    width: 80px;
+    height: 80px;
+}
+.card h2{
+    text-align: center;
+    margin-top: 8px;
     color: var(--secondaryText);
- }
+}

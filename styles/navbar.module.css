@@ -23,7 +23,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 .nav_items a{
     margin-left: 32px;

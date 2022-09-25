@@ -20,7 +20,9 @@ body {
   --primary: hsl(17, 42%, 44%);
   --primaryHover: hsl(17, 42%, 54%);
   --secondary: hsl(191, 15%, 50%);
+  --secondaryText: hsl(191, 15%, 70%);
   --terciary:hsl(201, 11%, 25%);
+  --terciaryTransparency:hsla(201, 11%, 25%, 0.90);
 }
 
 a {

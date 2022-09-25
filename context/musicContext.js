@@ -6,12 +6,13 @@ export const WebContext = createContext();
 
 export const ContextProvider = ({children}) => {
     const [music, setMusic] = useState(false)
-    const handleMusic = () => {
-        setMusic(!music);
-        return music;
-    }
+
+    // const handleMusic = () => {
+    //     setMusic(!music);
+    //     return music;
+    // }
     return(
-        <WebContext.Provider value={{handleMusic, music}} >
+        <WebContext.Provider value={{music, setMusic}} >
             {children}
         </WebContext.Provider>
     )
