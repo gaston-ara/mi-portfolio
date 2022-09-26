@@ -12,19 +12,19 @@ const Navbar = () => {
                 </Link>
                 <div className={navbar.nav_items}>
                     <Link href="/">
-                        <a className={path == "/" && navbar.navlink}>Inicio</a>
+                        <a className={path == "/" ? navbar.navlink : undefined}>Inicio</a>
                     </Link>
                     <Link href="/aboutme">
-                        <a className={path == "/aboutme" && navbar.navlink}>Sobre mí</a>
+                        <a className={path == "/aboutme" ? navbar.navlink : undefined}>Sobre mí</a>
                     </Link>
                     <Link href="/projects">
-                        <a className={path == "/projects" && navbar.navlink}>Proyectos</a>
+                        <a className={path == "/projects" ? navbar.navlink : undefined}>Proyectos</a>
                     </Link>
                     <Link href="/skills">
-                        <a className={path == "/skills" && navbar.navlink}>Habilidades</a>
+                        <a className={path == "/skills" ? navbar.navlink : undefined}>Habilidades</a>
                     </Link>
                     <Link href="/contact">
-                        <a className={path == "/contact" && navbar.navlink}>Contacto</a>
+                        <a className={path == "/contact" ? navbar.navlink : undefined}>Contacto</a>
                     </Link>
                 </div>
             </div>

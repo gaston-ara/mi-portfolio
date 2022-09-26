@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
   }
-#bgVideo{
+.bgVideo{
     position: fixed;
     object-fit: fill;
     bottom: 0;
@@ -24,6 +24,12 @@
   .music_btn svg {
     width: 48px;
     height: 48px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .music_btn svg:hover{
+    width: 56px;
+    height: 56px;
   }
   .vinyl{
     animation: rotating 2s linear infinite;
