@@ -13,6 +13,7 @@
 .content p{
   font-size: 30px;
   margin: 0;
+  color: var(--black05);
 }
 .buttons{
   margin: 32px 0;
@@ -27,6 +28,7 @@
   font-weight: 300;
   background-color: var(--primary);
   border: 1px solid transparent;
+  color: var(--black05);
 }
 .buttons :nth-child(1):hover{
   border: 1px solid var(--black05);
@@ -37,6 +39,7 @@
   font-size: 14px;
   text-decoration: underline;
   font-weight: 300;
+  color: var(--black05);
 }
 .buttons a:hover {
   text-decoration: none;
