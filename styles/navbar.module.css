@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  color: var(--black05);
 }
 .nav_items a{
     margin-left: 32px;
