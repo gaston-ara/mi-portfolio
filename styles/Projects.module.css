@@ -1,0 +1,48 @@
+.content{
+    color: var(--black05);
+    max-width: 1000px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--terciary);
+    padding: 32px;
+    border-radius: 16px;
+}
+.videosContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: var(--terciary);
+    color: var(--secondaryText);
+    overflow-x: auto;
+}
+.videoBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.videos{
+    width: 280px;
+    margin: 8px 16px;
+    border-radius: 16px;
+    filter: contrast(0.8);
+    transition: 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+.videos:hover{
+    filter: contrast(1);
+}
+.textVideoBox{
+    width: 280px;
+    margin: auto;
+    height: 95px;
+}
+.textVideoBox p{
+    margin: 0;
+}

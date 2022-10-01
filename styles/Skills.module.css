@@ -1,8 +1,4 @@
-.title{
-    z-index: 1;
-}
 .content{
-    z-index: 1;
     color: var(--black05);
     width: 90%;
     max-width: 700px;
@@ -14,6 +10,14 @@
     background-color: var(--terciary);
     padding: 32px;
     border-radius: 16px;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    flex-wrap: wrap;
 }
 .card{
     width: fit-content;
@@ -33,4 +37,10 @@
     text-align: center;
     margin-top: 8px;
     color: var(--secondaryText);
+}
+@media screen and (max-width: 700px) {
+    .slider{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }

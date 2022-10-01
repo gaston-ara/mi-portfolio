@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: 'Mitr', sans-serif;
 }
+::selection{
+  background-color: var(--primaryHover);
+  color: var(--black05);
+}
 :root{
   /* Colores */
   --black100: black;

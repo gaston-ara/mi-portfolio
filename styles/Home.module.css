@@ -1,11 +1,11 @@
 .content{
-  z-index: 1;
-  width: fit-content;
-  height: fit-content;
+  max-width: 90%;
+  user-select: none;
+  margin: auto;
 }
 .content h1{
   font-size: 93px;
-  margin: 0;
+  margin: 0 auto;
   font-weight: 400;
   line-height: 70px;
 }
@@ -15,6 +15,8 @@
 }
 .buttons{
   margin: 32px 0;
+  display: inline-block;
+  width: 280px;
 }
 .buttons :nth-child(1){
   padding: 12px 24px;
@@ -37,4 +39,7 @@
 }
 .buttons a:hover {
   text-decoration: none;
+}
+@media screen and (max-width: 700px) {
+
 }

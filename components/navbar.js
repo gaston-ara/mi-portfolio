@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import navbar from '../styles/navbar.module.css'
 import {useRouter} from 'next/router'
+import IconoHome from '../public/assets/icons/iconoHome'
+import IconoAboutMe from '../public/assets/icons/iconoAboutMe'
+import IconoProyectos from '../public/assets/icons/iconoProyectos'
+import IconoHabilidades from '../public/assets/icons/iconoHabilidades'
+import IconoContacto from '../public/assets/icons/iconoContacto'
+
 const Navbar = () => {
    const router = useRouter();
    const path = router.asPath;
@@ -8,23 +14,23 @@ const Navbar = () => {
         <nav className={navbar.container}>
             <div className={navbar.items_container}>
                 <Link href="/">
-                <a className={navbar.logo}>Gastón Aragón</a>
+                <a className={navbar.logo}>GA</a>
                 </Link>
                 <div className={navbar.nav_items}>
                     <Link href="/">
-                        <a className={path == "/" ? navbar.navlink : undefined}>Inicio</a>
+                        <a className={path == "/" ? navbar.navlink : undefined}><IconoHome/></a>
                     </Link>
                     <Link href="/aboutme">
-                        <a className={path == "/aboutme" ? navbar.navlink : undefined}>Sobre mí</a>
+                        <a className={path == "/aboutme" ? navbar.navlink : undefined}><IconoAboutMe/></a>
                     </Link>
                     <Link href="/projects">
-                        <a className={path == "/projects" ? navbar.navlink : undefined}>Proyectos</a>
+                        <a className={path == "/projects" ? navbar.navlink : undefined}><IconoProyectos/></a>
                     </Link>
                     <Link href="/skills">
-                        <a className={path == "/skills" ? navbar.navlink : undefined}>Habilidades</a>
+                        <a className={path == "/skills" ? navbar.navlink : undefined}><IconoHabilidades/></a>
                     </Link>
                     <Link href="/contact">
-                        <a className={path == "/contact" ? navbar.navlink : undefined}>Contacto</a>
+                        <a className={path == "/contact" ? navbar.navlink : undefined}><IconoContacto/></a>
                     </Link>
                 </div>
             </div>
