@@ -26,6 +26,7 @@
     height: 48px;
     cursor: pointer;
     transition: 0.3s;
+    color: var(--black05);
   }
   .music_btn svg:hover{
     width: 56px;
