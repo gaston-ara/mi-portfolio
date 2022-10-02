@@ -1,4 +1,4 @@
-.content{
+.content {
     color: var(--black05);
     max-width: 500px;
     width: 90%;
@@ -10,21 +10,32 @@
     padding: 32px;
     border-radius: 16px;
 }
-.boxText{
-        width: 90%;
-        padding: 16px;
-        color: var(--black05);
+
+.boxText {
+    width: 90%;
+    padding: 0;
+    color: var(--black05);
+    font-size: 20px;
 }
-.boxLinks{
+
+.boxLinks {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 200px;
 }
-.boxLinks svg{
-    color: var( --secondaryText);
+
+.boxLinks svg {
+    color: var(--secondaryText);
     transition: 0.3s;
 }
-.boxLinks svg:hover{
+
+.boxLinks svg:hover {
     color: var(--black05);
+}
+@media screen and (max-width: 400px) {
+    .boxText {
+        font-size: 18px;
+        padding: 0;
+    }
 }

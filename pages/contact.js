@@ -7,7 +7,7 @@ const Contacto = () => {
     <>
     <div className={contacto.content}>
       <div className={contacto.boxText}>
-        <h2>Consultá cualquier duda, contame tu proyecto y pedí tu presupuesto</h2>
+        <p>Consultá cualquier duda, contame tu proyecto y pedí tu presupuesto</p>
       </div>
       <div className={contacto.boxLinks}>
       <a href="mailto:gaston.ara.o@gmail.com"><IconoEmail/></a>

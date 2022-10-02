@@ -10,10 +10,10 @@ export default function Home() {
         <p>Desarrollo web frontend</p>
         <div className={home.buttons}>
           <Link href="/skills">
-            <a>Ver habilidades</a>
+            <a>Ver proyectos</a>
           </Link>
           <Link href="/projects">
-            <a>Ver proyectos</a>
+            <a>Ver habilidades</a>
           </Link>
         </div>
       </div>
