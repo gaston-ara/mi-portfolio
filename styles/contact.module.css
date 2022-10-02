@@ -13,10 +13,18 @@
 .boxText{
         width: 90%;
         padding: 16px;
+        color: var(--black05);
 }
 .boxLinks{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 200px;
+}
+.boxLinks svg{
+    color: var( --secondaryText);
+    transition: 0.3s;
+}
+.boxLinks svg:hover{
+    color: var(--black05);
 }

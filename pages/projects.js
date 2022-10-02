@@ -15,8 +15,8 @@ const Proyectos = () => {
       <div className={projects.content}>
         <div className={projects.videosContent}>
           <div className={projects.videoBox}>
-            <video onClick={(e) => openVideo(e)} onMouseLeave={(e) => pauseVideo(e)} onMouseEnter={(e) => playVideo(e)} muted loop className={projects.videos}>
-              <source src="/assets/elrestaurante-portfolio.mp4" type="video/mp4" />
+            <video poster="/assets/restaurante_poster.webp" onClick={(e) => openVideo(e)} onMouseLeave={(e) => pauseVideo(e)} onMouseEnter={(e) => playVideo(e)} muted loop className={projects.videos}>
+              <source src="/assets/elrestaurante-portfolio.webm" type="video/webm" />
             </video>
             <div className={projects.textVideoBox}>
               <p>El Restaurante</p>
@@ -25,8 +25,8 @@ const Proyectos = () => {
             </div>
           </div>
           <div className={projects.videoBox}>
-            <video onClick={(e) => openVideo(e)} onMouseLeave={(e) => pauseVideo(e)} onMouseEnter={playVideo} muted loop className={projects.videos}>
-              <source src="/assets/blackdog-portfolio.mp4" type="video/mp4" />
+            <video poster="/assets/blackdog_poster.webp" onClick={(e) => openVideo(e)} onMouseLeave={(e) => pauseVideo(e)} onMouseEnter={playVideo} muted loop className={projects.videos}>
+              <source src="/assets/blackdog-portfolio.webm" type="video/webm" />
             </video>
             <div className={projects.textVideoBox}>
               <p>BlackDog</p>
@@ -35,8 +35,8 @@ const Proyectos = () => {
             </div>
           </div>
           <div className={projects.videoBox}>
-            <video onClick={(e) => openVideo(e)} onMouseLeave={(e) => pauseVideo(e)} onMouseEnter={playVideo} muted loop className={projects.videos}>
-              <source src="/assets/modernclix-portfolio.mp4" type="video/mp4" />
+            <video poster="/assets/modernclix_poster.webp" onClick={(e) => openVideo(e)} onMouseLeave={(e) => pauseVideo(e)} onMouseEnter={playVideo} muted loop className={projects.videos}>
+              <source src="/assets/modernclix-portfolio.webm" type="video/webm" />
             </video>
             <div className={projects.textVideoBox}>
               <p>ModernClix</p>

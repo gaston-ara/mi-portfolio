@@ -24,7 +24,7 @@ const Layout = ({ children, title, content }) => {
             </Head>
             <Navbar />
             <div className={layout.background}>
-                <video muted loop className={layout.bgVideo} id="video_bg">
+                <video muted loop poster='/assets/hero_poster.webp' className={layout.bgVideo} id="video_bg">
                     <source src="/assets/hero_portfolio.mp4" type="video/mp4" />
                 </video>
                 <audio loop id='song'>

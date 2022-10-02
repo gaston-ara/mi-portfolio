@@ -1,6 +1,6 @@
 import aboutme from '../styles/aboutme.module.css'
 import Image from 'next/image'
-import profilePic from '../public/assets/toon.jpg'
+import profilePic from '../public/assets/toon.webp'
 
 const Aboutme = () => {
   return (
