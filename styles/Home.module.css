@@ -45,5 +45,19 @@
   text-decoration: none;
 }
 @media screen and (max-width: 700px) {
-
+  .content h1{
+    font-size: 74px;
+  }
+  .content p{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content h1{
+    font-size: 60px;
+    line-height: 52px;
+  }
+  .content p{
+    font-size: 20px;
+  }
 }
