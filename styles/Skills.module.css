@@ -14,10 +14,16 @@
 .slider{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
     overflow-x: auto;
     flex-wrap: wrap;
+}
+.cardsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card{
     width: fit-content;
@@ -37,10 +43,4 @@
     text-align: center;
     margin-top: 8px;
     color: var(--secondaryText);
-}
-@media screen and (max-width: 700px) {
-    .slider{
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
 }

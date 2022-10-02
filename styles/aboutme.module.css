@@ -28,6 +28,9 @@
     font-size: 18px;
     color: var(--secondaryText);
  }
+ .text p{
+   margin: 0;
+ }
  @media screen and (max-width: 700px) {
    .content{
       position: relative;
@@ -35,10 +38,46 @@
    }
    .image{
       position: absolute;
-      top: -64px;
+      top: -88px;
    }
    .text{
       width: 90%;
       margin-top: 48px;
+   }
+}
+@media screen and (max-width: 500px){
+   .image{
+      position: absolute;
+      top: -72px;
+   }
+   .text{
+      width: 90%;
+      margin-top: 32px;
+   }
+   .text p{
+      font-size: 16px;
+    }
+}
+@media screen and (max-width: 400px){
+   .text{
+      width: 90%;
+      margin-top: 32px;
+   }
+   .text p{
+      font-size: 14px;
+    }
+    .image{
+      position: absolute;
+      top: -48px;
+   }
+}
+@media screen and (max-width: 320px){
+   .image{
+      position: absolute;
+      top: -32px;
+   }
+   .text{
+      width: 100%;
+      margin-top: 24px;
    }
 }

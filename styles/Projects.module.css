@@ -46,3 +46,9 @@
 .textVideoBox p{
     margin: 0;
 }
+@media screen and (max-width: 500px){
+    .content{
+        width: 100%;
+        padding: 24px 0;
+    }
+}
