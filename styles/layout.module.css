@@ -20,6 +20,7 @@
     right: 24px;
     border: none;
     background-color: transparent;
+    opacity: 0;
   }
   .music_btn svg {
     width: 48px;

@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import * as ga from '../lib/ga'
 import {useRouter} from 'next/router'
 
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 

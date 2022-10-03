@@ -2,6 +2,7 @@
   max-width: 90%;
   user-select: none;
   margin: auto;
+  opacity: 0;
 }
 .content h1{
   font-size: 93px;

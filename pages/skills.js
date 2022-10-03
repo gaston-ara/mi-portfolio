@@ -1,10 +1,19 @@
 import skills from "../styles/Skills.module.css"
+import {gsap} from 'gsap';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 
 const Habilidades = () => {
+    // Gsap Animation
+    const contentSkillsRef = useRef();
+
+    useEffect(() => {
+        gsap.to(contentSkillsRef.current, { opacity: 1 }); ;
+    });
   return (
     <>
-      <div className={skills.content}>
+      <div className={skills.content} ref={contentSkillsRef}>
         <div className={skills.slider}>
           <div className={skills.cardsContainer}>
             <div className={skills.card}>

@@ -6,12 +6,21 @@ import IconoAboutMe from '../public/assets/icons/iconoAboutMe'
 import IconoProyectos from '../public/assets/icons/iconoProyectos'
 import IconoHabilidades from '../public/assets/icons/iconoHabilidades'
 import IconoContacto from '../public/assets/icons/iconoContacto'
+import {gsap} from 'gsap';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 const Navbar = () => {
    const router = useRouter();
    const path = router.asPath;
+
+   const navRef = useRef();
+
+  useEffect(() => {
+      gsap.to(navRef.current, { opacity: 1, delay: 0.3 }); ;
+  }, []);
     return (
-        <nav className={navbar.container}>
+        <nav className={navbar.container} ref={navRef}>
             <div className={navbar.items_container}>
                 <Link href="/">
                 <a className={navbar.logo}>GA</a>

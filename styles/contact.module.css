@@ -9,6 +9,7 @@
     background-color: var(--terciary);
     padding: 32px;
     border-radius: 16px;
+    opacity: 0;
 }
 
 .boxText {

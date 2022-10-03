@@ -1,4 +1,7 @@
 import projects from "../styles/Projects.module.css"
+import {gsap} from 'gsap';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 const Proyectos = () => {
   const playVideo = (e) => {
@@ -10,9 +13,16 @@ const Proyectos = () => {
   const openVideo = (e) => {
     e.target.requestFullscreen()
   }
+
+  // Gsap Animation
+  const contentProjectsRef = useRef();
+
+  useEffect(() => {
+      gsap.to(contentProjectsRef.current, { opacity: 1 }); ;
+  });
   return (
     <>
-      <div className={projects.content}>
+      <div className={projects.content} ref={contentProjectsRef}>
         <div className={projects.videosContent}>
           <div className={projects.videoBox}>
             <video poster="/assets/restaurante_poster.webp" onClick={(e) => openVideo(e)} onMouseLeave={(e) => pauseVideo(e)} onMouseEnter={(e) => playVideo(e)} muted loop className={projects.videos}>
