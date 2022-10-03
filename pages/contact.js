@@ -11,7 +11,7 @@ const Contacto = () => {
   const contentContactRef = useRef();
 
   useEffect(() => {
-      gsap.to(contentContactRef.current, { opacity: 1}); ;
+      gsap.to(contentContactRef.current, { opacity: 1, y:-10 }); ;
   });
   return (
     <>

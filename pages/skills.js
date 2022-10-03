@@ -9,7 +9,7 @@ const Habilidades = () => {
     const contentSkillsRef = useRef();
 
     useEffect(() => {
-        gsap.to(contentSkillsRef.current, { opacity: 1 }); ;
+        gsap.to(contentSkillsRef.current, { opacity: 1, y:-10 }); ;
     });
   return (
     <>

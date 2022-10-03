@@ -10,7 +10,7 @@ const Aboutme = () => {
    const contentMeRef = useRef();
 
    useEffect(() => {
-       gsap.to(contentMeRef.current, { opacity: 1 }); ;
+       gsap.to(contentMeRef.current, { opacity: 1, y:-10 }); ;
    });
   return (
       <>

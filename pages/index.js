@@ -9,7 +9,7 @@ export default function Home() {
   const boxRef = useRef();
 
   useEffect(() => {
-      gsap.to(boxRef.current, { opacity: 1 }); ;
+      gsap.to(boxRef.current, { opacity: 1, y:-10 }); ;
   }, []);
   return (
     <>
@@ -17,10 +17,10 @@ export default function Home() {
         <h1>Gastón Aragón</h1>
         <p>Desarrollo web frontend</p>
         <div className={home.buttons}>
-          <Link href="/skills">
+          <Link href="/projects">
             <a>Ver proyectos</a>
           </Link>
-          <Link href="/projects">
+          <Link href="/skills">
             <a>Ver habilidades</a>
           </Link>
         </div>

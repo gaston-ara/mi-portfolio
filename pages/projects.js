@@ -18,7 +18,7 @@ const Proyectos = () => {
   const contentProjectsRef = useRef();
 
   useEffect(() => {
-      gsap.to(contentProjectsRef.current, { opacity: 1 }); ;
+      gsap.to(contentProjectsRef.current, { opacity: 1, y:-10 }); ;
   });
   return (
     <>
