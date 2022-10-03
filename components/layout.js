@@ -2,13 +2,17 @@ import Head from 'next/head'
 import Navbar from './navbar'
 import layout from '../styles/layout.module.css'
 import { WebContext } from '../context/musicContext'
-import { useContext } from 'react'
-import {gsap} from 'gsap';
+import { useContext, useState } from 'react'
+import { gsap } from 'gsap';
 import { useRef } from 'react';
 import { useEffect } from 'react';
+import { useRouter } from 'next/router'
 
 const Layout = ({ children, title, content }) => {
+    const [position, setPosition] = useState("0% 100%")
     const { music, setMusic } = useContext(WebContext);
+    const router = useRouter();
+    const path = router.asPath;
 
     const playMusic = () => {
         setMusic(!music);
@@ -17,13 +21,35 @@ const Layout = ({ children, title, content }) => {
         music ? (audioTag.pause(), videoTag.pause()) : (audioTag.play(), videoTag.play());
     }
 
+    //Conditional stilyng
+    const getPositionBg = () => {
+        if (path == "/"){
+            setPosition("0% 100%")
+        }
+        if (path == "/aboutme"){
+            setPosition("25% 100%")
+        }
+        if (path == "/projects"){
+            setPosition("50% 100%")
+        }
+        if (path == "/skills"){
+            setPosition("75% 100%")
+        }
+        if (path == "/contact"){
+            setPosition("100% 100%")
+        }
+        return position
+    }
+
     // Gsap Animation
     const musicRef = useRef();
 
-  useEffect(() => {
-      gsap.to(musicRef.current, { opacity: 1, delay: 0.3 }); ;
-  }, []);
-
+    useEffect(() => {
+        gsap.to(musicRef.current, { opacity: 1, delay: 0.3 });;
+    }, []);
+    useEffect(() => {
+        getPositionBg()
+    },[path])
     return (
         <div>
             <Head>
@@ -34,7 +60,7 @@ const Layout = ({ children, title, content }) => {
             </Head>
             <Navbar />
             <div className={layout.background}>
-                <video preload muted loop poster='/assets/hero_poster.webp' className={layout.bgVideo} id="video_bg">
+                <video style={{ objectPosition: position}} preload muted loop poster='/assets/hero_poster.webp' className={layout.bgVideo} id="video_bg">
                     <source src="/assets/hero_portfolio.mp4" type="video/mp4" />
                 </video>
                 <audio loop id='song'>
