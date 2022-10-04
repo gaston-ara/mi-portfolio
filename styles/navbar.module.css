@@ -14,11 +14,14 @@
     margin: 0 auto;
 }
 .logo{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-family: 'Mitr', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    height: 48px;
 }
 .nav_items{
     display: flex;

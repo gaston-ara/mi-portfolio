@@ -29,9 +29,9 @@ const Proyectos = () => {
               <source src="/assets/elrestaurante-portfolio.webm" type="video/webm" />
             </video>
             <div className={projects.textVideoBox}>
-              <p>El Restaurante</p>
-              <p>Html - Css - Sass - Bootstrap</p>
-              <p>Sitio web para restaurante</p>
+              <p className={projects.skills}>Html - Css - Sass - Bootstrap</p>
+              <p className={projects.name}>El Restaurante </p>
+              <p className={projects.description}>Sitio web para restaurante</p>
             </div>
           </div>
           <div className={projects.videoBox}>
@@ -39,9 +39,9 @@ const Proyectos = () => {
               <source src="/assets/blackdog-portfolio.webm" type="video/webm" />
             </video>
             <div className={projects.textVideoBox}>
-              <p>BlackDog</p>
-              <p>Html - Css - Javascript - Bootstrap</p>
-              <p>Simulador de tienda online</p>
+              <p className={projects.skills}>Html - Css - Javascript - Bootstrap</p>
+              <p className={projects.name}>BlackDog </p>
+              <p className={projects.description}>Simulador de tienda online</p>
             </div>
           </div>
           <div className={projects.videoBox}>
@@ -49,9 +49,9 @@ const Proyectos = () => {
               <source src="/assets/modernclix-portfolio.webm" type="video/webm" />
             </video>
             <div className={projects.textVideoBox}>
-              <p>ModernClix</p>
-              <p>React.js - Firebase - Sass - Bootstrap</p>
-              <p>Simulador de tienda online</p>
+              <p className={projects.skills}>React.js - Firebase - Sass - Bootstrap</p>
+              <p className={projects.name}>ModernClix</p>
+              <p className={projects.description}>Simulador de tienda online</p>
             </div>
           </div>
         </div>

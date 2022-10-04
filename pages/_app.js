@@ -1,13 +1,33 @@
 import '../styles/globals.css'
 import { ContextProvider } from '../context/musicContext'
 import Layout from '../components/layout'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import * as ga from '../lib/ga'
 import {useRouter} from 'next/router'
 
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
+  const path = useRouter().asPath;
+  const [title, setTitle] = useState("")
+
+  const getTitle = () => {
+    if (path == "/"){
+      setTitle("Inicio - Portfolio | Gastón Aragón")
+    }
+    if (path == "/aboutme"){
+      setTitle("Sobre mí - Portfolio | Gastón Aragón")
+    }
+    if (path == "/projects"){
+      setTitle("Proyectos - Portfolio | Gastón Aragón")
+    }
+    if (path == "/skills"){
+      setTitle("Habilidades - Portfolio | Gastón Aragón")
+    }
+    if (path == "/contact"){
+      setTitle("Contacto - Portfolio | Gastón Aragón")
+    }
+  }
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -24,7 +44,11 @@ function MyApp({ Component, pageProps }) {
     }
   }, [router.events])
 
-  return <ContextProvider><Layout><Component {...pageProps} /></Layout></ContextProvider> 
+  useEffect(() => {
+    getTitle()
+  },[path])
+
+  return <ContextProvider><Layout title={title}><Component {...pageProps} /></Layout></ContextProvider> 
 }
 
 export default MyApp

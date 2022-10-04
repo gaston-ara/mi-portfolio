@@ -7,7 +7,7 @@ import { gsap } from 'gsap';
 import { useRef } from 'react';
 import { useEffect } from 'react';
 
-const Layout = ({ children, title, content }) => {
+const Layout = ({ children, title }) => {
     const { music, setMusic } = useContext(WebContext);
 
 
@@ -28,9 +28,7 @@ const Layout = ({ children, title, content }) => {
         <div>
             <Head>
                 <title>{title}</title>
-                <meta name='description' content={content} />
-                <link rel="icon" href="/favicon.ico" />
-
+                <link rel="icon" href="/assets/GA.ico" />
             </Head>
             <Navbar />
             <div className={layout.background}>

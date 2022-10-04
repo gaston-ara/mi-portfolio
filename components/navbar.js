@@ -23,7 +23,7 @@ const Navbar = () => {
         <nav className={navbar.container} ref={navRef}>
             <div className={navbar.items_container}>
                 <Link href="/">
-                <a className={navbar.logo}>GA</a>
+                <a className={navbar.logo}><img height="32px" src="/assets/GA.png" alt="logo" /></a>
                 </Link>
                 <div className={navbar.nav_items}>
                     <Link href="/">
