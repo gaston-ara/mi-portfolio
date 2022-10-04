@@ -33,7 +33,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 .card svg{
     width: 80px;
@@ -44,4 +43,10 @@
     margin-top: 8px;
     margin-bottom: 0;
     color: var(--secondaryText);
+}
+@media screen and (max-width: 500px){
+    .content{
+        width: 100%;
+        padding: 24px 16px;
+    }
 }
