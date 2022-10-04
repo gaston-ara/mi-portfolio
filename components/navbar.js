@@ -26,20 +26,20 @@ const Navbar = () => {
                 <a className={navbar.logo}><img height="32px" src="/assets/GA.png" alt="logo" /></a>
                 </Link>
                 <div className={navbar.nav_items}>
-                    <Link href="/">
-                        <a className={path == "/" ? navbar.navlink : undefined}><IconoHome/></a>
+                    <Link href={path.slice(0,3) == "/en"? "/en" : "/"}>
+                        <a className={(path == "/" || path == "/en") ? navbar.navlink : undefined}><IconoHome path={path}/></a>
                     </Link>
-                    <Link href="/aboutme">
-                        <a className={path == "/aboutme" ? navbar.navlink : undefined}><IconoAboutMe/></a>
+                    <Link href={path.slice(0,3) == "/en"? "/en/aboutme" : "/aboutme"}>
+                        <a className={path.includes("/aboutme") ? navbar.navlink : undefined}><IconoAboutMe path={path}/></a>
                     </Link>
-                    <Link href="/projects">
-                        <a className={path == "/projects" ? navbar.navlink : undefined}><IconoProyectos/></a>
+                    <Link href={path.slice(0,3) == "/en"? "/en/projects" : "/projects"}>
+                        <a className={path.includes("/projects") ? navbar.navlink : undefined}><IconoProyectos path={path}/></a>
                     </Link>
-                    <Link href="/skills">
-                        <a className={path == "/skills" ? navbar.navlink : undefined}><IconoHabilidades/></a>
+                    <Link href={path.slice(0,3) == "/en"? "/en/skills" : "/skills"}>
+                        <a className={path.includes("/skills") ? navbar.navlink : undefined}><IconoHabilidades path={path}/></a>
                     </Link>
-                    <Link href="/contact">
-                        <a className={path == "/contact" ? navbar.navlink : undefined}><IconoContacto/></a>
+                    <Link href={path.slice(0,3) == "/en"? "/en/contact" : "/contact"}>
+                        <a className={path.includes("/contact") ? navbar.navlink : undefined}><IconoContacto path={path}/></a>
                     </Link>
                 </div>
             </div>

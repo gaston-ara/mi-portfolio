@@ -23,6 +23,13 @@
   background-color: transparent;
   opacity: 0;
 }
+.language{
+  position: fixed;
+  top: 16px;
+  right: 40px;
+  z-index: 2;
+  font-size: 18px;
+}
 .music_btn svg {
   width: 48px;
   height: 48px;
@@ -53,5 +60,9 @@
     top: 16px;
     right: 24px;
     bottom: unset;
+  }
+  .language{
+    right: unset;
+    left: 40px;
   }
 }
