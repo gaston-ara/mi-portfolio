@@ -29,6 +29,7 @@
   right: 40px;
   z-index: 2;
   font-size: 18px;
+  color: var(--black05);
 }
 .music_btn svg {
   width: 48px;
