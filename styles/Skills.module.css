@@ -26,7 +26,7 @@
     margin: 8px 0;
 }
 .card{
-    width: fit-content;
+    width: 100px;
     height: fit-content;
     margin: auto 24px;
     display: flex;
@@ -48,10 +48,12 @@
     .content{
         width: 100%;
         padding: 24px 16px;
-    }
-    
+    }   
 }
 @media screen and (max-width: 400px){
+    .card{
+        margin: 0 16px;
+    }
     .card svg{
         width: 64px;
         height: 64px;
