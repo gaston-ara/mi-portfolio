@@ -49,4 +49,14 @@
         width: 100%;
         padding: 24px 16px;
     }
+    
+}
+@media screen and (max-width: 400px){
+    .card svg{
+        width: 64px;
+        height: 64px;
+    }
+    .card h2{
+        font-size: 16px;
+    }
 }
