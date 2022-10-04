@@ -19,7 +19,7 @@ const Aboutme = () => {
             <Image src={profilePic} alt="Imágen del autor" width={160} height={160} />
           </div>
           <div className={aboutme.text}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ducimus accusamus corporis saepe ratione accusantium iste, molestiae optio? Voluptatibus dolores beatae in quas expedita hic eligendi, minima cum quod ipsa.
+            <p>Ofrezco soluciones basadas en diseño y programación de sitios web y web apps. Me capacito en pos de realizar trabajos acordes a las necesidades y posibilidades de cada proyecto. Mi propósito es lograr ofrecer un servicio útil, honesto y confiable, priorizando al usuario y los objetivos del trabajo a desarrollar.
             </p>
           </div>
         </div>
