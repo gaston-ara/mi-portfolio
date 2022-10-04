@@ -27,6 +27,21 @@ function MyApp({ Component, pageProps }) {
     if (path == "/contact"){
       setTitle("Contacto - Portfolio | Gastón Aragón")
     }
+    if (path == "/en"){
+      setTitle("Home - Portfolio | Gastón Aragón")
+    }
+    if (path == "/en/aboutme"){
+      setTitle("About me - Portfolio | Gastón Aragón")
+    }
+    if (path == "/en/projects"){
+      setTitle("Projects - Portfolio | Gastón Aragón")
+    }
+    if (path == "/en/skills"){
+      setTitle("Skills - Portfolio | Gastón Aragón")
+    }
+    if (path == "/en/contact"){
+      setTitle("Contact - Portfolio | Gastón Aragón")
+    }
   }
 
   useEffect(() => {
