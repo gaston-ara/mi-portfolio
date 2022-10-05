@@ -25,7 +25,6 @@ const Layout = ({ children, title }) => {
 
     const getNewPath = () => {
        setNewPath(path.replace("/en", ""))
-       console.log(newPath);
     }
 
     // Gsap Animation
