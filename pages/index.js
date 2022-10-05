@@ -3,9 +3,15 @@ import home from '../styles/Home.module.css'
 import {gsap} from 'gsap';
 import { useRef } from 'react';
 import { useEffect } from 'react';
+import { useRouter } from "next/router";
 
 
 export default function Home() {
+  //English version link
+  const router = useRouter();
+  const path = router.asPath;
+
+  //Gsap Animation
   const boxRef = useRef();
 
   useEffect(() => {
@@ -17,10 +23,10 @@ export default function Home() {
         <h1>Gastón Aragón</h1>
         <p>Desarrollo web frontend</p>
         <div className={home.buttons}>
-          <Link href="/projects">
+          <Link href={path.slice(0,3) == "/en"? "/en/projects" : "/projects"}>
             <a>Ver proyectos</a>
           </Link>
-          <Link href="/skills">
+          <Link href={path.slice(0,3) == "/en"? "/en/skills" : "/skills"}>
             <a>Ver habilidades</a>
           </Link>
         </div>
