@@ -17,10 +17,10 @@ export default function Home() {
         <h1>Gastón Aragón</h1>
         <p>Frontend web developer</p>
         <div className={home.buttons}>
-          <Link href="/projects">
+          <Link href="/en/projects">
             <a>View projects</a>
           </Link>
-          <Link href="/skills">
+          <Link href="/en/skills">
             <a>View skills</a>
           </Link>
         </div>
