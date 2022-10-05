@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <nav className={navbar.container} ref={navRef}>
             <div className={navbar.items_container}>
-                <Link href="/">
+                <Link href={path.slice(0,3) == "/en"? "/en" : "/"}>
                 <a className={navbar.logo}><img height="32px" src="/assets/GA.png" alt="logo" /></a>
                 </Link>
                 <div className={navbar.nav_items}>
